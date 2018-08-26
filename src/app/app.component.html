@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,5 +16,23 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul>  -->
+<app-parchild [secondcollegeroom] = "serialNumber" (labware)="receivedraft($event)" [collegeroom] = "rollNumber" (messageEvent)="receiveMessage($event)">
+</app-parchild>
+<!-- <app-parchild [secondcollegeroom] = "serialNumber"></app-parchild>
+<app-parchild (labware)="receivedraft($event)"></app-parchild> -->
+
+
+<h3>{{datareceive}}</h3>
+<h3>{{datareceive2}}</h3>
+<!-- <h1>{{datareceive4}}</h1> -->
+<h4>{{datareceive3}}</h4>
+<h5>{{dataTransferred}}</h5>
+
+<h4>Service Result</h4>
+<p>Id : {{serviceresult.id}}</p>
+<p>User Id : {{serviceresult.userId}}</p>
+<p>Title : {{serviceresult.title}}</p>
+<p>Completed : {{serviceresult.completed}}</p>
+
 

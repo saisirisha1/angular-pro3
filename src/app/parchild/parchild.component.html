@@ -1,0 +1,14 @@
+<p>
+  parchild works!
+</p>
+<button (click) = "newMessage()">Click Here to Activate Service</button>
+
+
+<h4>New Service Result</h4>
+<div *ngFor="let k of kailu">
+  <p>Id: {{k.id}}</p>
+  <p>Login: {{k.login}}</p>
+  <p>Node: {{k.node_id}}</p>
+  <p>Url: {{k.url}}</p>
+  <p>Repo : {{k.repos_url}}</p>
+</div>
